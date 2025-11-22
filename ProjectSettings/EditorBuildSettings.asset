@@ -5,9 +5,30 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/LanesMainHubs/MainHall.unity
+    guid: edcb91d1cca97874681b205f232529f3
+  - enabled: 1
+    path: Assets/Scenes/Kailey Scenes Variations/Hotel.unity
+    guid: 7c38e47fd171c744d9e44451d2fc06be
+  - enabled: 1
+    path: Assets/Scenes/Kailey Scenes Variations/Storage.unity
+    guid: 9183087c68f939943a8aff8ef9cef1db
+  - enabled: 1
+    path: Assets/Scenes/Kailey Scenes Variations/VastOcean.unity
+    guid: 6e0c6b65d103d934aa4cf1e53b1fd32d
+  - enabled: 1
+    path: Assets/Scenes/LanesMainHubs/HotelMH.unity
+    guid: 409a5551ffba5344abbbd97d9d11d811
+  - enabled: 1
+    path: Assets/Scenes/LanesMainHubs/SeaMH.unity
+    guid: 439225e30a7983f4bbeb2dcb2adc65a1
+  - enabled: 1
+    path: Assets/Scenes/LanesMainHubs/StorageMH.unity
+    guid: b9cf29ea488700741859c818c2c57bdd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
