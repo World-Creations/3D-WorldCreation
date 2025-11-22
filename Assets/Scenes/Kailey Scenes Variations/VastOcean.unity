@@ -1767,7 +1767,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &692008922
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2153,7 +2153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 322de39776ffb5e4990ea80a2fbb40fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::texttrigger
-  text: {fileID: 1296455502}
+  message: box is for heading back to the main hub!
+  text: {fileID: 513170694}
 --- !u!65 &816864003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2239,12 +2240,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816864001}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.4, y: 50.9, z: 83.4}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4.2225, y: 1, z: 5.13}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1337165443}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &819331748
 PrefabInstance:
@@ -3445,12 +3446,12 @@ GameObject:
   - component: {fileID: 1296455504}
   - component: {fileID: 1296455503}
   m_Layer: 5
-  m_Name: text
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1296455503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3848,7 +3849,8 @@ Transform:
   m_LocalPosition: {x: 20.4, y: 50.9, z: 83.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 816864006}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1393489502
@@ -5244,7 +5246,6 @@ SceneRoots:
   - {fileID: 153823755}
   - {fileID: 992535158}
   - {fileID: 1337165443}
-  - {fileID: 816864006}
   - {fileID: 447068024}
   - {fileID: 1296455506}
   - {fileID: 1315630995}

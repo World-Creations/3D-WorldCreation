@@ -10,11 +10,11 @@ public class infordeskscript : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         text.SetActive(true);
-        StartCoroutine(wiater());
+        StartCoroutine(waiter());
     }
 
 
-    private IEnumerator wiater()
+    private IEnumerator waiter()
     {
         yield return new WaitForSeconds(4f);
         text.SetActive(false);

@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class texttrigger : MonoBehaviour
 {
-    public GameObject text;
-
-
+    public string message;
+    public TMP_Text text;
 
     public void OnTriggerEnter(Collider other)
     {
-        text.SetActive(true);
+        text.text = message;
+        text.gameObject.transform.parent.gameObject.SetActive(true);
         StartCoroutine(wiater());
     }
 
@@ -18,7 +19,7 @@ public class texttrigger : MonoBehaviour
     private IEnumerator wiater()
     {
         yield return new WaitForSeconds(4f);
-        text.SetActive(false);
+        text.gameObject.transform.parent.gameObject.SetActive(false);
     }
 
 }
