@@ -2,15 +2,19 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using TMPro;
+using System.Collections;
 
 public class PlayerController: MonoBehaviour
 {
     [SerializeField] private GameObject feetCollider;
     [SerializeField] private string scene;
+    [SerializeField] private TMP_Text text;
 
-    public float speed, sensitivity, maxForce;
-    public float jumpForce;
+    [SerializeField] private float defaultSpeed, sensitivity, maxForce;
+    [SerializeField] private float jumpForce;
 
+    private float speed;
     private float lookRot;
     private Vector2 move, look;
     private Rigidbody rb;
@@ -38,7 +42,8 @@ public class PlayerController: MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         cam = GetComponentInChildren<Camera>();
-        ChangeScene("MainHall", "Default");
+        ChangeScene("MainHall", "Default"); // Default starting scene
+        speed = defaultSpeed;
     }
 
     private void Start()
@@ -121,5 +126,21 @@ public class PlayerController: MonoBehaviour
             Debug.LogWarning("Entrances not found in " + newScene);
         }
         // TODO: Fade in?
+    }
+
+    public void DisplayMessage(string message)
+    {
+        if (text.transform.parent.gameObject.activeSelf) return; // A message is already being displayed
+        speed = 0;
+        text.text = message;
+        text.transform.parent.gameObject.SetActive(true);
+        StartCoroutine(HideMessage());
+    }
+
+    private IEnumerator HideMessage()
+    {
+        yield return new WaitForSeconds(4f); // TODO: Update to use left click (Implement with dialogue tree support)
+        text.transform.parent.gameObject.SetActive(false);
+        speed = defaultSpeed;
     }
 }
