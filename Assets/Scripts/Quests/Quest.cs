@@ -11,6 +11,7 @@ public class Quest
 
     public readonly List<Objective> _objectives;
     public bool isComplete = false;
+    public bool closed = false;
 
     public Quest(string questName, string questDescription, List<Objective> objectives)
     {
