@@ -33,6 +33,6 @@ public class QuestPanel : MonoBehaviour
 
     public void HideQuest(Quest quest)
     {
-        _questMap[quest.name]._questDisplay.SetActive(false);
+        Destroy(_questMap[quest.name]._questDisplay);
     }
 }

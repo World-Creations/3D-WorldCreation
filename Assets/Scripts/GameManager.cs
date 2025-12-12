@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using XNode;
 
 public class GameManager : MonoBehaviour
 {
@@ -70,9 +71,15 @@ public class GameManager : MonoBehaviour
         return _questMap[name].isComplete;
     }
 
+    public bool IsQuestClosed(string name)
+    {
+        return _questMap.ContainsKey(name) && _questMap[name].closed;
+    }
+
     public void CloseQuest(string name)
     {
         if (!_questMap.ContainsKey(name)) return; // Can't close a quest that was never opened
+        _questMap[name].closed = true;
         OnQuestClosed?.Invoke(_questMap[name]);
     }
     #endregion
