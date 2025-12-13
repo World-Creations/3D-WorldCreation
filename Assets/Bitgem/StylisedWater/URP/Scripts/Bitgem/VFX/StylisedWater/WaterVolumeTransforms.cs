@@ -34,7 +34,7 @@ namespace Bitgem.VFX.StylisedWater
 
                 var drawPos = new Vector3(x, y, z) * TileSize;
                 var drawSca = new Vector3(Mathf.RoundToInt(sca.x), Mathf.RoundToInt(sca.y), Mathf.RoundToInt(sca.z)) * TileSize;
-                drawPos += drawSca / 2f;
+                drawPos += drawSca / 1f;
                 drawPos += transform.position;
                 drawPos -= new Vector3(TileSize, TileSize, TileSize);
 
