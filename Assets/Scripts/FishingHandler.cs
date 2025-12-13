@@ -52,6 +52,8 @@ public class FishingHandler : MonoBehaviour
     {
         if (caught)
         {
+            GameManager.Instance.AddProgress("CatchFish", 1);
+            GameManager.Instance.AddProgress("Catch" + fish.GetName(), 1);
             // TODO: Add fish to inventory or directly deposit money
             DialogueHandler.Instance.NotificationMessage("<color=green>You caught a " + fish.GetName() + "!</color>", fish.sprite);
         }
