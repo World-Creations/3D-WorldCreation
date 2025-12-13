@@ -14,7 +14,7 @@ public class YapTester : MonoBehaviour
         DialogueHandler.Instance.StartConversation(graph, ConversationEnd);
     }
 
-    public void ConversationEnd(string result)
+    private void ConversationEnd(string result)
     {
         switch (result)
         {

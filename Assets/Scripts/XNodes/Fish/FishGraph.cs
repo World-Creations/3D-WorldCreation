@@ -8,17 +8,16 @@ using XNodeEditor;
 #endif
 
 [CreateAssetMenu]
-public class DialogueGraph : NodeGraph {
-	public CoreNodeBase current;
+public class FishGraph : NodeGraph {
 }
 
 #if UNITY_EDITOR
-[CustomNodeGraphEditor(typeof(DialogueGraph))]
-public class DialogueGraphEditor : NodeGraphEditor
+[CustomNodeGraphEditor(typeof(FishGraph))]
+public class FishGraphEditor : NodeGraphEditor
 {
     public override string GetNodeMenuName(Type type)
     {
-        if (type.IsSubclassOf(typeof(DialogueNodeBase)) || type.IsSubclassOf(typeof(CoreNodeBase)))
+        if (type == typeof(FishNode))
         {
             return base.GetNodeMenuName(type);
         }
