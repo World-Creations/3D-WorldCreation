@@ -1,0 +1,735 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8138710771937411812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 1336, y: 504}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 8490bd698a4845246a55d719d9fe4c06, type: 3}
+  fishName: 
+  chance: 300
+  resilience: 60
+  progressModifier: 20
+  value: 140
+--- !u!114 &-7386194829150108963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 824, y: 120}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 3ce2398e81745c948ad78899ed5b8e1d, type: 3}
+  fishName: 
+  chance: 200
+  resilience: 18
+  progressModifier: 18
+  value: 280
+--- !u!114 &-7371408404413157380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 1336, y: 120}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: c40e87446a2faad48ba51bcd1c52a463, type: 3}
+  fishName: 
+  chance: 420
+  resilience: 69
+  progressModifier: 10
+  value: 65
+--- !u!114 &-6344390387414846698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 568, y: 120}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: bc886d14b9ce7a34487f0bfebdf5c6df, type: 3}
+  fishName: 
+  chance: 400
+  resilience: 10
+  progressModifier: -50
+  value: 60
+--- !u!114 &-5637357163498374915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 312, y: 504}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: d53851bd4d2beb54eb04902a5beea736, type: 3}
+  fishName: 
+  chance: 2
+  resilience: 90
+  progressModifier: 80
+  value: 1000
+--- !u!114 &-5619177976707280896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 2104, y: 120}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: a6a8140baefea1e47965eb4fbbc64e22, type: 3}
+  fishName: 
+  chance: 200
+  resilience: 14
+  progressModifier: -20
+  value: 140
+--- !u!114 &-5592703217381433182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 1336, y: 888}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: b01137d84b484ae4091201462906c3d9, type: 3}
+  fishName: 
+  chance: 30
+  resilience: 78
+  progressModifier: 50
+  value: 350
+--- !u!114 &-4074836248921756786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: -200, y: 888}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 5d0647ba11a00c94f9dbf0a659e1f58b, type: 3}
+  fishName: 
+  chance: 90
+  resilience: 85
+  progressModifier: 55
+  value: 300
+--- !u!114 &-3849085343906780191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 56, y: 888}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 504fa1f683128724c90f45f8bff93f05, type: 3}
+  fishName: 
+  chance: 45
+  resilience: 42.5
+  progressModifier: 27.5
+  value: 600
+--- !u!114 &-2913099200230213629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 1592, y: 504}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 93a34d336d21f7642befe84baeb2318e, type: 3}
+  fishName: 
+  chance: 150
+  resilience: 30
+  progressModifier: 10
+  value: 280
+--- !u!114 &-2669135421692119750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 568, y: 888}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 3d84d0bb4e0d2494fa49f43879efa059, type: 3}
+  fishName: 
+  chance: 250
+  resilience: 20
+  progressModifier: 0
+  value: 110
+--- !u!114 &-1669827792983032438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 1592, y: 888}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 966d9716a79a13840bd313a2145727e6, type: 3}
+  fishName: 
+  chance: 15
+  resilience: 39
+  progressModifier: 25
+  value: 700
+--- !u!114 &-1239556435826194703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 824, y: 888}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: c304098cf91e51e4383dc5e0f287a064, type: 3}
+  fishName: 
+  chance: 45
+  resilience: 65
+  progressModifier: 35
+  value: 200
+--- !u!114 &-966347278576916403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 56, y: 504}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 8cd24f5f633589e4788ffd59213c41e8, type: 3}
+  fishName: 
+  chance: 325
+  resilience: 5
+  progressModifier: -60
+  value: 50
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c4b35bfa121fee489fd8f7ad190a31d, type: 3}
+  m_Name: AllFishData
+  m_EditorClassIdentifier: Assembly-CSharp::FishGraph
+  nodes:
+  - {fileID: 2324599336470342925}
+  - {fileID: 2056842385105287551}
+  - {fileID: 5330346434031235840}
+  - {fileID: -6344390387414846698}
+  - {fileID: -7386194829150108963}
+  - {fileID: 7617224208801643670}
+  - {fileID: -7371408404413157380}
+  - {fileID: 9216819399613321238}
+  - {fileID: 74203596973511732}
+  - {fileID: -5619177976707280896}
+  - {fileID: 4089925141772942739}
+  - {fileID: -966347278576916403}
+  - {fileID: -5637357163498374915}
+  - {fileID: 510129766291019059}
+  - {fileID: 3399505569456009934}
+  - {fileID: 6054667250027752189}
+  - {fileID: -8138710771937411812}
+  - {fileID: -2913099200230213629}
+  - {fileID: 2923525257445102445}
+  - {fileID: 2923587023547858725}
+  - {fileID: -4074836248921756786}
+  - {fileID: -3849085343906780191}
+  - {fileID: 7175243473377606714}
+  - {fileID: -2669135421692119750}
+  - {fileID: -1239556435826194703}
+  - {fileID: 8548608030300624412}
+  - {fileID: -5592703217381433182}
+  - {fileID: -1669827792983032438}
+  - {fileID: 4884959684452097271}
+  - {fileID: 8806653374166011863}
+--- !u!114 &74203596973511732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 1848, y: 120}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 27add11d3aeb54944a03e311a6ce80e6, type: 3}
+  fishName: 
+  chance: 400
+  resilience: 28
+  progressModifier: -10
+  value: 70
+--- !u!114 &510129766291019059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 568, y: 504}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 67262b33c60388245a79ce73bd3dd707, type: 3}
+  fishName: 
+  chance: 1
+  resilience: 45
+  progressModifier: 40
+  value: 2000
+--- !u!114 &2056842385105287551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 56, y: 120}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 23f8ffe6d6a36d64685aecc8c010b763, type: 3}
+  fishName: 
+  chance: 998
+  resilience: 21.5
+  progressModifier: -30
+  value: 90
+--- !u!114 &2324599336470342925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: -200, y: 120}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: a029734bea537af4a8b5472d7629f623, type: 3}
+  fishName: 
+  chance: 1996
+  resilience: 43
+  progressModifier: -15
+  value: 45
+--- !u!114 &2923525257445102445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 1848, y: 504}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: bb2699fd00d62384dbfb4bf73a3e03a7, type: 3}
+  fishName: 
+  chance: 150
+  resilience: 50
+  progressModifier: 5
+  value: 90
+--- !u!114 &2923587023547858725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 2104, y: 504}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: fc11dad41ebd1ab4b8187683e2ca0b63, type: 3}
+  fishName: 
+  chance: 75
+  resilience: 25
+  progressModifier: 2.5
+  value: 180
+--- !u!114 &3399505569456009934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 824, y: 504}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: ae0e203ba764bd14f98a2607d18081cb, type: 3}
+  fishName: 
+  chance: 120
+  resilience: 75
+  progressModifier: 40
+  value: 220
+--- !u!114 &4089925141772942739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: -200, y: 504}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 5c65f8d1cde56e04f89670e1fb8c8bb8, type: 3}
+  fishName: 
+  chance: 650
+  resilience: 10
+  progressModifier: -30
+  value: 25
+--- !u!114 &4884959684452097271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 1848, y: 888}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 1ddb85815d8755941b677c9fd10c5869, type: 3}
+  fishName: 
+  chance: 666
+  resilience: 66
+  progressModifier: 15
+  value: 120
+--- !u!114 &5330346434031235840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 312, y: 120}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: c90f2faa6b440e142b4231f44212449c, type: 3}
+  fishName: 
+  chance: 800
+  resilience: 20
+  progressModifier: -25
+  value: 30
+--- !u!114 &6054667250027752189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 1080, y: 504}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 1f9bea09c15566b40a48d4cc5d347494, type: 3}
+  fishName: 
+  chance: 60
+  resilience: 37.5
+  progressModifier: 20
+  value: 440
+--- !u!114 &7175243473377606714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 312, y: 888}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 86ae16ef60ff8c74db4d6f1aa6f1102f, type: 3}
+  fishName: 
+  chance: 500
+  resilience: 40
+  progressModifier: 0
+  value: 55
+--- !u!114 &7617224208801643670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 1080, y: 120}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 61b76fe34142efd4d84d33eface9d864, type: 3}
+  fishName: 
+  chance: 100
+  resilience: 9
+  progressModifier: 9
+  value: 560
+--- !u!114 &8548608030300624412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 1080, y: 888}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: e216aa4db14dc154185d74e6e6f902f0, type: 3}
+  fishName: 
+  chance: 22
+  resilience: 32.5
+  progressModifier: 17.5
+  value: 400
+--- !u!114 &8806653374166011863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 2104, y: 888}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 6a861e6e6b4445847b01bbfa184d49b5, type: 3}
+  fishName: 
+  chance: 333
+  resilience: 33
+  progressModifier: 7.5
+  value: 240
+--- !u!114 &9216819399613321238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49541ff190438044da83573ed457cb21, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::FishNode
+  graph: {fileID: 11400000}
+  position: {x: 1592, y: 120}
+  ports:
+    keys: []
+    values: []
+  sprite: {fileID: 21300000, guid: 76a75416df5aa6d4596725377e7a5e4e, type: 3}
+  fishName: 
+  chance: 210
+  resilience: 55
+  progressModifier: 5
+  value: 130

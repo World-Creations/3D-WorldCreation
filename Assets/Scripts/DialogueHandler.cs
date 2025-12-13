@@ -15,6 +15,10 @@ public class DialogueHandler : MonoBehaviour
     [SerializeField] private Transform responseButtonPanel;
     [SerializeField] private GameObject buttonPrefab;
 
+    [SerializeField] RectTransform notificationParent;
+    [SerializeField] TextMeshProUGUI notificationPrefab;
+    [SerializeField] TextMeshProUGUI notificationSpritePrefab;
+
     private DialogueGraph dialogue;
     private Action<string> resultCallback;
 
@@ -24,6 +28,8 @@ public class DialogueHandler : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else if (Instance != this) Destroy(this);
+
+        ShowTutorialMessages();
     }
 
     public void StartConversation(DialogueGraph dialogueRequest, Action<string> callback = null)
@@ -134,5 +140,33 @@ public class DialogueHandler : MonoBehaviour
         if (dialogue == null || dialogue.current == null || spokenLine == null || dialogue.current.GetType().Name != "NPCDialogueNode") return;
 
         NextNode("exit");
+    }
+
+    public async Task NotificationMessage(string message)
+    {
+        TextMeshProUGUI notification = Instantiate(notificationPrefab, notificationParent.transform);
+        notification.text = message;
+        await Task.Delay(5000);
+        Destroy(notification.gameObject);
+    }
+
+    public async Task NotificationMessage(string message, Sprite sprite)
+    {
+        TextMeshProUGUI notification = Instantiate(notificationSpritePrefab, notificationParent.transform);
+        notification.text = message;
+        notification.GetComponentInChildren<Image>().sprite = sprite;
+        await Task.Delay(5000);
+        Destroy(notification.gameObject);
+    }
+    private async void ShowTutorialMessages()
+    {
+        await Task.Delay(1000);
+        NotificationMessage("Hold right click to cast your rod");
+
+        await Task.Delay(1000);
+        NotificationMessage("Keep the grey bar in the white area");
+
+        await Task.Delay(1000);
+        NotificationMessage("Hold or release left click to move the white region");
     }
 }
