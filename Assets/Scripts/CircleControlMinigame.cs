@@ -10,7 +10,7 @@ public class CircleControlMinigame : MonoBehaviour
     [SerializeField] TextMeshProUGUI progressText;
     [SerializeField] RectTransform progressBar;
 
-    private float _control = 0.3f;
+    private float _control = 1f;
     private float _resilience = 50f;
     private float _progressSpeed = 10f;
 
